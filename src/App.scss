@@ -1,0 +1,213 @@
+$font-size:smaller;
+$font-color:rgba(209, 209, 209, 0.956);
+$bg: rgb(33,36,40);
+$shadow: -8px -5px 20px rgba(255, 255, 255, 0.048),5px 10px 15px rgba(0, 0, 0, 0.288),inset -8px -5px 15px rgba(255, 255, 255, 0.002);
+$red:rgb(255,1,79);
+.container_main{
+    padding-bottom: 6%;
+}
+.nav_main{
+  height: 90px;
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+}
+.nav_bar_main{
+    width: 95%;
+    position: fixed;
+    z-index: 999;
+}
+.nav_links_main{
+    display: flex;
+    gap: 40px;
+    margin-top: 10px;
+   
+}
+.nav_links{
+    list-style: none;
+    font-size: $font-size;
+    color: $font-color;
+    
+ }
+ .download_CV{
+    width: 110px;
+    height:50px;
+    box-shadow: $shadow;
+    transform: translateY(-25%);
+    color: red;
+    display: flex;
+    justify-content: center;
+ }
+ .download_para{
+    padding-top: 10%;
+ }
+.nav_logo{
+    font-size: xx-large;
+    font-weight: 600;
+    padding-left: 10px;
+    color: $font-color;
+}
+.nav_img_div{
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    border: 3px solid rgba(237, 237, 237, 0.193);
+    margin-bottom: 30px;
+   
+}
+.nav_logo_main{
+    display: flex;
+}
+.nav_logo_img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+}
+.hero_section{
+    width:85%;
+    margin-top: 45px;
+    
+    
+}
+.hero_section_left{
+    width: 60%;
+}
+.intro_para{
+    color: $font-color;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    
+}
+.my_name{
+    font-weight: 600;
+    color: rgb(255,1,79);
+}
+
+.intro_heading{
+    font-size: 60px;
+    font-weight: 700;
+}
+.intro_heading1{
+    font-size: 50px;
+    font-weight: 600;
+}
+.intro_heading2{
+    font-size: 50px;
+    font-weight: 600;
+}
+.introduction_div{
+    width: 80%;
+    color: $font-color;
+}
+.introduction_para{
+    font-size: 19px;
+}
+.intro_btn{
+    height: 50px;
+    border: 1px solid gray;
+    outline: none;
+    background:transparent ;
+    display: inline-block;
+    color: white;
+    text-transform: uppercase;
+    font-size: xx-large;
+    font-weight: 600;
+    transform: translateY(-14%);
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.hero_section_right{
+    width: 40%;
+   
+}
+.hero_section_right_img_div_main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+.hero_section_right_img_div{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    border: 1px solid rgba(237, 237, 237, 0.193);
+    box-shadow: 10px 10px 10px black;
+    animation: blob 8s ease-out infinite ;
+    
+
+}
+.hero_section_right_img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+    animation: blob 8s ease-out infinite ;
+    transition: 1s all linear;
+}
+@keyframes blob{
+    0%,100%{
+      
+        border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+    }
+    50%{
+     
+        border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
+    }
+}
+.social_skills_main{
+    margin-top: 50px;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+.social_skills_wrapper{
+    width: 40%;
+}
+.social_media_buttons{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.social_para{
+    color: $font-color;
+    text-transform: uppercase;
+}
+.social_btn{
+    color: white;
+    border: none;
+    outline: none;
+    width: 60px;
+    height: 60px;
+    box-shadow: -8px -5px 20px rgba(255, 255, 255, 0.048),5px 10px 15px rgba(0, 0, 0, 0.288),inset -8px -5px 15px rgba(255, 255, 255, 0.002);
+}
+.fa-html5{
+    color: orangered;
+}
+.hr_line{
+    color: rgb(0, 0, 0);
+    width: 95%;
+    font-weight: 700;
+   margin-top: 90px;
+}
+.about_section{
+    height: 100vh;
+}
+.about_heading{
+    font-size: xx-large;
+    font-weight: 600;
+}
+.forearm{
+    animation: forearm 3s linear infinite;
+    transform-origin: top;
+    transform-box: fill-box;
+}
+@keyframes forearm {
+    // 0%{
+    //     transform: rotateY('45')
+    // }100%{
+    //     transform: rotateX('45');
+    // }
+}
