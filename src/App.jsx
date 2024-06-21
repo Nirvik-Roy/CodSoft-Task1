@@ -5,6 +5,9 @@ import Button from './Button'
 import Mylogo from '././assets/_DSC9933 (2).jpg'
 import { useGSAP} from '@gsap/react'
 import gsap from 'gsap'
+import pdf from './assets/My Resume (4)-1.pdf'
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+gsap.registerPlugin(ScrollTrigger);
 
 function App() {
 
@@ -67,6 +70,68 @@ let tl=gsap.timeline()
   opacity:0,
   duration:0.3
  })
+ gsap.from('.svg_div',{
+  x:-200,
+  duration:0.80,
+  opacity:0,
+  scrollTrigger:{
+    trigger:'.svg_div',
+    scroller:'body',
+    start:'top 90%',
+    
+  }
+ })
+ gsap.from(".hi_there_text",{
+  y:-30,
+  opacity:0,
+  duration:0.5,
+  scrollTrigger:{
+    trigger:'.hi_there_text',
+    scroller:'body',
+    start:'top 90%',
+  }
+ })
+ gsap.from(".about_me_text_div",{
+  x:300,
+  opacity:0,
+  duration:0.5,
+  scrollTrigger:{
+    trigger:'.hi_there_text',
+    scroller:'body',
+    start:'top 90%',
+  }
+ })
+ gsap.from(".about_me_name_div",{
+  x:300,
+  opacity:0,
+  duration:0.6,
+  scrollTrigger:{
+    trigger:'.hi_there_text',
+    scroller:'body',
+    start:'top 90%',
+  }
+ })
+ gsap.from(".contact_btn",{
+  y:100,
+  opacity:0,
+  scrollTrigger:{
+    trigger:'.hi_there_text',
+    scroller:'body',
+    start:'top 100%',
+    scrub:2
+  }
+ })
+ gsap.from(".download_CV_btn",{
+  y:100,
+ 
+  opacity:0,
+  scrollTrigger:{
+    trigger:'.hi_there_text',
+    scroller:'body',
+    start:'top 100%',
+    scrub:2
+  }
+ })
 })
   return (
     <>
@@ -121,7 +186,7 @@ let tl=gsap.timeline()
               <p className='social_para'>Find With Me</p>
               <div className='d-flex justify-content-between'>
                 <div className='social_media_buttons'>
-                  <button className='social_btn btn'><i class="fa-brands fa-facebook-f text-light"></i></button>
+                  <button className='social_btn btn btn1'><i class="fa-brands fa-facebook-f text-light"></i></button>
                   <button className='social_btn btn'><i class="fa-brands fa-instagram"></i></button>
                   <button className='social_btn btn'><i class="fa-brands fa-linkedin"></i></button>
                 </div>
@@ -159,7 +224,7 @@ let tl=gsap.timeline()
 
       {/* About Section */}
      <section className='about_section'>
-      <h1 className='text-light about_heading text-center'>ABOUT US</h1>
+      <h1 className='text-light about_heading text-center'>ABOUT ME</h1>
       <div className='about_us_container'>
         <div className='about_us_main'>
           <div className='left_about_us'>
@@ -168,7 +233,40 @@ let tl=gsap.timeline()
           </div>
           </div>
           <div className='right_about_us'>
-            {/* Hi there is left WE will do it today morning */}
+           <div className='hi_there_main'>
+               <div className='hi_there_div'>
+                <p className='pt-3 hi_there_text'>Hi There</p>
+               </div>
+               <div className='about_me_text_div'>
+                <p>In id nulla magna. Nullam posuere fermentum mattis. Nunc id dui at sapien faucibus fermentum ut vel diam. Nullam tempus, nunc id efficitur sagittis, urna est ultricies eros, ac porta sem turpis quis leo. Nulla in feugiat elit.</p>
+               </div>
+               <div className='d-flex justify-content-between'>
+               <div className='about_me_name_div'>
+                      <p className='about_me_name'>Name:</p>
+                      <p className='about_me_name2'>Nirvik</p>
+               </div>
+               <div className='about_me_name_div'>
+                      <p className='about_me_name'>Email:</p>
+                      <p className='about_me_name2'>nirvikroy802@gmail.com</p>
+               </div>
+               </div>
+               <div className='d-flex justify-content-between'>
+               <div className='about_me_name_div'>
+                      <p className='about_me_name'>Phone:</p>
+                      <p className='about_me_name2'>+91 8016353086</p>
+               </div>
+               <div className='about_me_name_div about_me_div2'>
+                      <p className='about_me_name'>Github</p>
+                      <p className='about_me_name2'>Nirvik-Roy</p>
+               </div>
+            
+               </div>
+               <hr className='text-light'></hr>
+                  <div className='d-flex justify-content-between w-75 mt-4 buttons_div'>
+                      <button className=' contact_btn'>Contact Me <i class="fa-solid fa-arrow-right"></i> </button>
+                      <button className='download_CV_btn'>Download CV <i class="fa-solid fa-arrow-right"></i> </button>
+                  </div>
+           </div>
           </div>
         </div>
       </div>
