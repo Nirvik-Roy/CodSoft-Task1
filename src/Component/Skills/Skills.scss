@@ -1,0 +1,148 @@
+$font-size:smaller;
+$font-color:rgba(209, 209, 209, 0.956);
+$bg: rgb(33,36,40);
+$shadow: -8px -5px 20px rgba(255, 255, 255, 0.048),5px 10px 15px rgba(0, 0, 0, 0.288),inset -8px -5px 15px rgba(255, 255, 255, 0.002);
+$red:rgb(255,1,79);
+
+
+
+.skills_section{
+   padding-bottom: 10%;
+}
+.skills_heading{
+    font-size: 400%;
+    color: $font-color;
+    font-weight: 700;
+    position: relative;
+}
+.skills_heading::before{
+    content: "";
+    position: absolute;
+    width: 16%;
+    height: 2px;
+    background-color: $red;
+    right: 0;
+    bottom: 0;
+    left: 42%;
+    top: 110%;
+}
+.skills_container_main{
+    margin-top: 70px;
+}
+.skills_main_div{
+    width: 90%;
+    box-shadow: $shadow;
+    padding-bottom: 4%;
+    padding-top: 2%;
+}
+.left_skills_div{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: end;
+}
+.left_skills_main{
+    width: 90%;
+}
+.skill_head_div{
+    width: 90%;
+    color: $font-color;
+}
+.skill_1{
+    color: $font-color;
+    font-size:large;
+    font-weight: 600;
+    margin-top: 30px;
+}
+.skill_percentage{
+    font-weight: 600;
+    transform: translateY(50%);
+}
+.percentage_div{
+    width: 90%;
+    height: 8px;
+    box-shadow: $shadow;
+    border-radius: 10px;
+    margin-left: 0;
+}
+.percentage{
+    width: 0;
+    height: 100%;
+    border-radius: 10px;
+    background:linear-gradient(to right, rgb(197, 29, 113),red)
+}
+.percentage1{
+    width: 0;
+    height: 100%;
+    border-radius: 10px;
+    background:linear-gradient(to right, rgb(197, 29, 113),red)
+}
+.percentage2{
+    width: 0;
+    height: 100%;
+    border-radius: 10px;
+    background:linear-gradient(to right, rgb(197, 29, 113),red)
+}
+.percentage3{
+    width: 0;
+    height: 100%;
+    border-radius: 10px;
+    background:linear-gradient(to right, rgb(197, 29, 113),red)
+}
+.percentage4{
+    width: 0;
+    height: 100%;
+    border-radius: 10px;
+    background:linear-gradient(to right, rgb(197, 29, 113),red)
+}
+.percentage5{
+    width: 0;
+    height: 100%;
+    border-radius: 10px;
+    background:linear-gradient(to right, rgb(197, 29, 113),red)
+}
+.percentage6{
+    width: 0;
+    height: 100%;
+    border-radius: 10px;
+    background:linear-gradient(to right, rgb(197, 29, 113),red)
+}
+.percentage7{
+    width: 0;
+    height: 100%;
+    border-radius: 10px;
+    background:linear-gradient(to right, rgb(197, 29, 113),red)
+}
+.percentage8{
+    width: 0;
+    height: 100%;
+    border-radius: 10px;
+    background:linear-gradient(to right, rgb(197, 29, 113),red)
+}
+.percentage9{
+    width: 0;
+    height: 100%;
+    border-radius: 10px;
+    background:linear-gradient(to right, rgb(197, 29, 113),red)
+}
+.percentage10{
+    width: 0;
+    height: 100%;
+    border-radius: 10px;
+    background:linear-gradient(to right, rgb(197, 29, 113),red)
+}
+.percentage11{
+    width: 0;
+    height: 100%;
+    border-radius: 10px;
+    background:linear-gradient(to right, rgb(197, 29, 113),red)
+}
+.right_skills_div{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+.right_skills_main{
+    width: 90%;
+}
