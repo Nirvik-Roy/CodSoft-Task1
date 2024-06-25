@@ -1,0 +1,244 @@
+$font-size:smaller;
+$font-color:rgba(209, 209, 209, 0.956);
+$bg: rgb(33,36,40);
+$shadow: -8px -5px 20px rgba(255, 255, 255, 0.048),5px 10px 15px rgba(0, 0, 0, 0.288),inset -8px -5px 15px rgba(255, 255, 255, 0.002);
+$red:rgb(255,1,79);
+$font-size:400%;
+$font-weight:700;
+
+
+.portfolio_section{
+    padding-bottom: 10%;
+}
+.portfolio_heading{
+    color: $font-color;
+    font-size: $font-size;
+    font-weight: $font-weight;
+    position: relative;
+}
+.portfolio_heading::before{
+    position: absolute;
+    content: '';
+    width: 22%;
+    background-color: $red;
+    height: 2px;
+    left: 38.6%;
+    bottom: -15%;
+}
+.portfolio_container{
+    margin-top: 80px;
+}
+.portfolio_projects_container{
+    width: 90%;
+}
+.project_container{
+    width: 30%;
+    border-radius: 20px;
+    height: 400px;
+    box-shadow: $shadow;
+    cursor: pointer;
+    transition: 1s linear all;
+    margin-top:30px ;
+}
+.project_container:hover{
+    box-shadow: inset$shadow;
+}
+.project_img_div:hover > .project_img{
+    scale: 1.1;
+}
+.project_div_main{
+    width: 85%;
+    height: 100%;
+    border-radius: 20px;
+}
+.project_img_div{
+    margin-top: 30px;
+    height: 220px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.project_img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    object-position: top;
+    transition: 0.3s all linear;
+}
+.project_domain{
+    color: $red;
+    text-transform: uppercase;
+    font-size: small;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+.project_heading{
+    font-weight: 600;
+    color: $font-color;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: xx-large;
+    text-align: center;
+}
+.project_about{
+    font-weight: 600;
+    color: $font-color;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: x-large;
+    margin-top: -10px;
+    text-align: center;
+}
+.project_likes{
+    transition: 0.3s linear all;
+    color: $font-color;
+}
+.project_likes:hover{
+    color: $red;
+}
+.portfolio_projects_container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.modal_wrapper{
+    height: 100dvh;
+    width: 100dvw;
+    display: flex;
+    justify-content: center;
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    align-items: center;
+    z-index: 999;
+}
+.modal_main{
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: $bg;
+    z-index: 999;
+}
+.modal_container{
+   width: 90%;
+   box-shadow: $shadow;
+   border-radius: 10px;
+   height: 500px;
+   display: flex;
+   justify-content: space-around;
+   animation: animation 0.4s linear 1;
+   transition: 0.2s all linear;
+}
+
+@keyframes animation{
+    0%{
+        transform: translateY(-50%);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(5%);
+        opacity: 1;
+    }
+}
+.modal_content_left{
+    width: 50%;
+}
+.modal_content_right{
+    width: 50%;
+    position: relative;
+}
+.modal_img_div{
+    width: 85%;
+    border-radius: 10px;
+    height: 75%;
+}
+.modal_img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    object-position: center;
+}
+.modal_content_right_details{
+    width: 85%;
+    height: 75%;
+}
+.modal_domain{
+    color: $font-color;
+}
+.modal_name{
+    color: rgba(255, 255, 255, 0.717);
+    font-size: 35px;
+    font-weight: 600;
+}
+.modal_about{
+    color: rgba(255, 255, 255, 0.374);
+    font-size: larger;
+    margin-top: 20px;
+}
+.modal_about2{
+    color: rgba(255, 255, 255, 0.374);
+    font-size: larger;
+    margin-top: 30px;
+}
+
+.modal_like_project_btn{
+    outline: none;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 28%;
+    height: 55px;
+    border-radius: 5px;
+    background-color: $bg;
+    color: $red;
+    box-shadow: $shadow;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: small;
+}
+.modal_view_project_btn{
+    outline: none;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35%;
+    height: 55px;
+    border-radius: 5px;
+    background-color: $bg;
+    color: $red;
+    box-shadow: $shadow;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: small;
+    margin-left: 30px;
+}
+.modal_view_project_btn:hover{
+    box-shadow: inset $shadow;
+}
+.modal_like_project_btn:hover{
+    box-shadow: inset $shadow;
+}
+.fa-x{
+    font-weight: lighter;
+    font-size: small;
+}
+.modal_close_btn{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    box-shadow: $shadow;
+    position: absolute;
+    top: 0;
+    left: 92%;
+    right: 0;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.modal_close_btn:hover{
+    box-shadow: inset $shadow;
+}

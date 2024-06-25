@@ -7,6 +7,9 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { Timeline } from 'gsap/gsap-core';
 gsap.registerPlugin(ScrollTrigger);
 const Skills = () => {
+    
+
+
 
     const mousemove = (e) =>{
    

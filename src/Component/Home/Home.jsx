@@ -6,6 +6,8 @@ import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import About from '../About/About'
 import Skills from '../Skills/Skills'
+import Portfolio from '../Portfolio/Portfolio'
+import Contact from '../Contact/Contact'
 gsap.registerPlugin(ScrollTrigger);
 
 const Home = () => {
@@ -16,7 +18,8 @@ const Home = () => {
     gsap.to('.cursor',{
       x:e.pageX,
       y:e.pageY,
-      ease:'back.out'
+      ease:'back.out',
+      display:'block'
     })
   }
 useGSAP(()=>{
@@ -46,9 +49,14 @@ useGSAP(()=>{
     x:-300,
     duration:0.3,
     opacity:0,
-    
    })
   
+   tl.from('.my_name',{
+     y:100,
+     opacity:0,
+    duration:0.5,
+    stagger:0.15,
+   })
    tl.from(".introduction_para",{
     x:-300,
     duration:0.3,
@@ -81,7 +89,7 @@ useGSAP(()=>{
 })
   return (
     <>
-      <div onMouseMove={((e)=>mousemove(e))} className='container_main'>
+      <div onMouseMove={((e)=>mousemove(e))} className='container_main' >
         <div className='cursor'></div>
        <nav className='nav_main'>
       <div className='nav_bar_main d-flex justify-content-between align-items-center'>
@@ -115,7 +123,16 @@ useGSAP(()=>{
     <div className='hero_section_left'>
       <div className='hero_section_left_text'>
       <p className='intro_para'>Welcome To My World</p>
-        <h1 className='text-light intro_heading'>Hi, I'm <span className='my_name'>Nirvik Roy</span></h1>
+        <h1 className='text-light intro_heading'>Hi, I'm 
+        <span className='my_name'> N</span>
+        <span className='my_name'>i</span>
+        <span className='my_name'>r</span>
+        <span className='my_name'>v</span>
+        <span className='my_name'>i</span>
+        <span className='my_name'>k</span>
+        <span className='my_name'> R</span>
+        <span className='my_name'>o</span>
+        <span className='my_name'>y</span></h1>
         <p className='d-inline text-light intro_heading'>a </p> <p className='intro_heading2 text-light d-inline'>Front-End Developer</p>
         
        
@@ -169,6 +186,8 @@ useGSAP(()=>{
 
       <About/>
       <Skills/>
+      <Portfolio/>
+      <Contact/>
     </>
   )
 }

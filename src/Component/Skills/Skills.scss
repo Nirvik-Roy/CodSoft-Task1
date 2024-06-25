@@ -3,11 +3,12 @@ $font-color:rgba(209, 209, 209, 0.956);
 $bg: rgb(33,36,40);
 $shadow: -8px -5px 20px rgba(255, 255, 255, 0.048),5px 10px 15px rgba(0, 0, 0, 0.288),inset -8px -5px 15px rgba(255, 255, 255, 0.002);
 $red:rgb(255,1,79);
-
+$font-size:400%;
+$font-weight:700;
 
 
 .skills_section{
-   padding-bottom: 10%;
+   padding-bottom: 2%;
 }
 .skills_heading{
     font-size: 400%;
@@ -37,7 +38,6 @@ $red:rgb(255,1,79);
 }
 .left_skills_div{
     width: 50%;
-    height: 100%;
     display: flex;
     justify-content: end;
 }

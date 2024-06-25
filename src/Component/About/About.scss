@@ -101,7 +101,9 @@ $red:rgb(255,1,79);
     display: flex;
     justify-content: center;
     align-items: center;
-    
+}
+.svg_div:hover {
+    box-shadow: inset $shadow;
 }
 .hi_there_div{
     width: 160px;

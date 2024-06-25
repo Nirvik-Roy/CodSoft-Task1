@@ -15,7 +15,7 @@ $red:rgb(255,1,79);
 .nav_bar_main{
     width: 95%;
     position: fixed;
-    z-index: 999;
+    z-index: 888;
 }
 .nav_links_main{
     display: flex;
@@ -129,10 +129,9 @@ $red:rgb(255,1,79);
     margin-top: 50px;
 }
 .hero_section_right_img_div{
-    width: 300px;
-    height: 300px;
+    width: 310px;
+    height: 310px;
     border-radius: 50%;
-    border: 1px solid rgba(237, 237, 237, 0.193);
     box-shadow: 10px 10px 10px black;
     animation: blob 8s ease-out infinite ;
 }
@@ -155,9 +154,6 @@ $red:rgb(255,1,79);
         border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
     }
 }
-
-
-
 .social_skills_main{
     margin-top: 50px;
     width: 80%;

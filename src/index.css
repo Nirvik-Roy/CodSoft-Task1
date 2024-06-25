@@ -5,6 +5,9 @@
   font-family: sans-serif;
   scroll-behavior: smooth;
 }
+a{
+  text-decoration: none;
+}
 body,html{
   height: 100%;
   width: 100%;
@@ -25,6 +28,7 @@ body,html{
   border: 0.1px solid white;
   background-color: transparent;
   border-radius: 50%;
-  position: absolute;
+  position: fixed;
   z-index: 999;
+  display: none;
 }

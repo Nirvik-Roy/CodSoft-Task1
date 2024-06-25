@@ -17,8 +17,9 @@ const About = () => {
     useGSAP(()=>{
         gsap.from('.svg_div',{
          x:-200,
-         duration:0.80,
+         duration:0.90,
          opacity:0,
+         ease:'bounce',
          scrollTrigger:{
            trigger:'.svg_div',
            scroller:'body',
