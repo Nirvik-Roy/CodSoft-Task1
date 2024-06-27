@@ -96,7 +96,7 @@ box-shadow: inset $shadow;
 .svg_div1{
     width: 85%;
     height: 250px;
-    border: 0.5px solid white;
+    border: 0.5px solid $bg;
     border-radius: 6px;
     overflow: hidden;
 }
@@ -104,7 +104,7 @@ box-shadow: inset $shadow;
     transition: 0.3s all linear;
     width: 100%;
     height: 100%;
-    background-color: rgba(255, 255, 255, 0.44) ;
+    background-color: rgba(255, 255, 255, 0.108) ;
 }
 .svg1:hover{
     scale: 1.2;
