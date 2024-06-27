@@ -162,7 +162,11 @@ useGSAP(()=>{
     
 
     </div>
+  
     </div>
+    <div className='d-flex justify-content-center mt-5'>
+    <hr className='hr_line'/>
+  </div>
     </section>
     </>
   )

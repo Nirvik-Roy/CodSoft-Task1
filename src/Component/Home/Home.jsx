@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import './Home.scss'
 import Mylogo from '../../assets/_DSC9933 (2).jpg'
 import { useGSAP} from '@gsap/react'
@@ -8,12 +8,19 @@ import About from '../About/About'
 import Skills from '../Skills/Skills'
 import Portfolio from '../Portfolio/Portfolio'
 import Contact from '../Contact/Contact'
+import Footer from '../Footer/Footer'
 gsap.registerPlugin(ScrollTrigger);
 
 const Home = () => {
- 
+  const [nav_active,setnav_active]=useState(false)
 
-  const mousemove = (e) =>{
+
+const change_background =()=>{
+  console.log(window.scrollY)
+}
+
+window.addEventListener('keypress',change_background)
+  const  mousemove = (e) =>{
    
     gsap.to('.cursor',{
       x:e.pageX,
@@ -87,12 +94,13 @@ useGSAP(()=>{
     duration:0.3
    })
 })
+
   return (
     <>
-      <div onMouseMove={((e)=>mousemove(e))} className='container_main' >
+      <div   onMouseMove={((e)=>mousemove(e))} className='container_main ' >
         <div className='cursor'></div>
        <nav className='nav_main'>
-      <div className='nav_bar_main d-flex justify-content-between align-items-center'>
+      <div className={` nav_bar_main d-flex justify-content-between align-items-center ${nav_active?'nav_active':''}`}>
     <div className='nav_logo_main '>
       <div className='nav_img_div_main d-flex'>
         <div className='nav_img_div mt-2'>
@@ -103,6 +111,8 @@ useGSAP(()=>{
         <p className=' nav_logo mt-3'>NEO</p>
       </div>
     </div>
+
+    
     <div className='nav_div_wrapper'>
       <ul className='text-light nav_links_main'>
         <li className='nav_links'>HOME</li>
@@ -188,6 +198,7 @@ useGSAP(()=>{
       <Skills/>
       <Portfolio/>
       <Contact/>
+      <Footer/>
     </>
   )
 }

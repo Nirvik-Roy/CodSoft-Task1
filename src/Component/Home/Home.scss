@@ -8,20 +8,29 @@ $red:rgb(255,1,79);
 }
 .nav_main{
   height: 90px;
-  margin-top: 15px;
   display: flex;
   justify-content: center;
+ 
 }
 .nav_bar_main{
-    width: 95%;
+    height: 90px;
+    width: 100%;
     position: fixed;
     z-index: 888;
+    padding-top: 2%;
+}
+.nav_active{
+    background-color:rgba(35, 38, 43, 0.692) ;
+    backdrop-filter: blur(12px);
 }
 .nav_links_main{
     display: flex;
     gap: 40px;
-    margin-top: 10px;
+    margin-top: 15px;
    
+}
+.nav_div_wrapper{
+    margin-right: 2%;
 }
 .nav_links{
     list-style: none;
@@ -34,7 +43,6 @@ $red:rgb(255,1,79);
     height:50px;
     box-shadow: $shadow;
     transform: translateY(-25%);
-    
     display: flex;
     justify-content: center;
    
@@ -62,6 +70,7 @@ $red:rgb(255,1,79);
 }
 .nav_logo_main{
     display: flex;
+    margin-left: 2%;
 }
 .nav_logo_img{
     width: 100%;
