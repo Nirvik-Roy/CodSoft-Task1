@@ -1,10 +1,22 @@
 import React from 'react'
 import './Footer.scss'
 import logo from '../../assets/_DSC9933 (2).jpg'
+import gsap from 'gsap'
+import { useEffect } from 'react'
+
 const Footer = () => {
+
+  const mousemove = (e) =>{
+    console.log((e))
+    gsap.to('.cursor',{
+      x:e.pageX,
+      y:e.pageY,
+      ease:'back.out'
+    })
+  }
   return (
     <>
-      <section className='footer_section'>
+      <section  className='footer_section' onMouseMove={((e)=>mousemove(e))}>
         <div className='footer_container'>
         <div className='footer_wrapper d-flex justify-content-center align-items-center'>
             <div className='footer_logo_div'>

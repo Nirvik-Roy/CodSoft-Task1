@@ -13,15 +13,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 const Home = () => {
   const [nav_active,setnav_active]=useState(false)
-
-
-const change_background =()=>{
-  console.log(window.scrollY)
-}
-
-window.addEventListener('keypress',change_background)
   const  mousemove = (e) =>{
-   
     gsap.to('.cursor',{
       x:e.pageX,
       y:e.pageY,
@@ -32,12 +24,12 @@ window.addEventListener('keypress',change_background)
 useGSAP(()=>{
     let tl=gsap.timeline()
     tl.from('.nav_img_div',{
-      duration:0.3,
+      duration:0.8,
       opacity:0,
-      y:-30,
+      y:-90,
     })
     tl.from(".nav_logo",{
-      duration:0.3,
+      duration:0.5,
       opacity:0,
       y:-30,
     })
@@ -97,9 +89,9 @@ useGSAP(()=>{
 
   return (
     <>
-      <div   onMouseMove={((e)=>mousemove(e))} className='container_main ' >
+      <div onMouseMove={((e)=>mousemove(e))} className='container_main ' >
         <div className='cursor'></div>
-       <nav className='nav_main'>
+       <nav  className='nav_main'>
       <div className={` nav_bar_main d-flex justify-content-between align-items-center ${nav_active?'nav_active':''}`}>
     <div className='nav_logo_main '>
       <div className='nav_img_div_main d-flex'>

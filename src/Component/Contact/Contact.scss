@@ -96,7 +96,7 @@ box-shadow: inset $shadow;
 .svg_div1{
     width: 85%;
     height: 250px;
-    border: 1px solid white;
+    border: 0.5px solid white;
     border-radius: 6px;
     overflow: hidden;
 }
@@ -212,6 +212,8 @@ box-shadow: inset $shadow;
     color: $font-color;
 }
 .name_input{
+    padding-left: 2%;
+    color: white;
     transition: 0.2s all linear;
     width: 100%;
     border: 2px solid #191b1e;
@@ -228,6 +230,8 @@ box-shadow: inset $shadow;
     color: $font-color;
 }
 .number_input{
+    padding-left: 2%;
+    color: white;
     transition: 0.2s all linear;
     width: 100%;
     border: 2px solid #191b1e;
@@ -246,6 +250,8 @@ box-shadow: inset $shadow;
     margin-bottom: 20px;
 }
 .email_input{
+    padding-left: 2%;
+    color: white;
     transition: 0.2s all linear;
     width: 100%;
     border: 2px solid #191b1e;
@@ -264,6 +270,8 @@ box-shadow: inset $shadow;
     margin-bottom: 20px;
 }
 .subject_input{
+    padding-left: 2%;
+    color: white;
     transition: 0.2s all linear;
     width: 100%;
     border: 2px solid #191b1e;
@@ -282,6 +290,8 @@ box-shadow: inset $shadow;
     margin-bottom: 20px;
 }
 .message_input{
+    padding-left: 2%;
+    color: white;
     transition: 0.2s all linear;
     width: 100%;
     border:2px solid #191b1e;
