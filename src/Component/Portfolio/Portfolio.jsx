@@ -53,15 +53,14 @@ const Portfolio = () => {
   }
   useGSAP(()=>{
     gsap.from('.project_container',{
-      y:100,
+      y:50,
       opacity:0,
       duration:0.1,
-      ease:'power3',
       scrollTrigger:{
         trigger:'.project_container',
         scroller:'body',
         start:'top 100%',
-        end:'bottom 10%',
+
       }
     })
   })

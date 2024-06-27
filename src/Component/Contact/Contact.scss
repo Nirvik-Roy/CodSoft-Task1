@@ -1,0 +1,306 @@
+$font-size:smaller;
+$font-color: rgb(196,207,222);
+$bg: rgb(33,36,40);
+$shadow: -8px -5px 20px rgba(255, 255, 255, 0.048),5px 10px 15px rgba(0, 0, 0, 0.288),inset -8px -5px 15px rgba(255, 255, 255, 0.002);
+$red:rgb(255,1,79);
+
+.contact_heading{
+    font-size: 14vw;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 600;
+    cursor: pointer;
+}
+.contact_main{
+    height: 100%;
+  width: 100%;
+}
+.contact_wrapper{
+    width: 90%;
+    margin-top: -100px;
+}
+.hire_wrapper{
+    cursor: pointer;
+}
+.hire_div{
+    width: 15%;
+    height: 65px;
+    color:$red;
+    box-shadow: $shadow;
+    border-radius: 10px;
+    font-size: large;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s all linear;
+    
+}
+.hire_div:hover{
+box-shadow: inset $shadow;
+}
+.contact{
+    color: $red;
+    font-size: larger;
+}
+.contact_with_me{
+    color: rgb(196,207,222);
+    font-size: 450%;
+    font-weight: 600;
+}
+.contact_us_main{
+    margin-top: 10%;
+}
+.arm{
+    animation: arm 2s linear infinite;
+    transform-origin: left;
+    transform: translate(-30%,-23%);
+}
+@keyframes arm {
+    0%{
+        transform: translate(-30%,-23%);
+    }100%{
+        transform: translate(-30%,-25%);
+    }
+}
+.arm2{
+    animation: arm2 2s linear infinite;
+    transform-origin: left;
+    transform: translate(-30%,-23%);
+}
+@keyframes arm2 {
+    0%{
+        transform: translate(-30%,-23%);
+    }100%{
+        transform: translate(-30%,-25%);
+    }
+}
+.contact_form_left{
+    width: 40%;
+    box-shadow: $shadow;
+    border-radius: 10px;
+}
+.contact_left_main{
+    width:100%;
+}
+
+.contact_svg_wrapper{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+.svg_div1{
+    width: 85%;
+    height: 250px;
+    border: 1px solid white;
+    border-radius: 6px;
+    overflow: hidden;
+}
+.svg1{
+    transition: 0.3s all linear;
+    width: 100%;
+    height: 100%;
+    background-color: $font-color;
+}
+.svg1:hover{
+    scale: 1.2;
+}
+.contact_left_information_main{
+    width: 85%;
+    margin-top: 35px;
+}
+.contact_left_heading{
+    font-size: 300%;
+    font-weight: 600;
+}
+.contact_left_information_para{
+    color: rgba(227, 227, 227, 0.656);
+    font-size: 130%;
+    margin-top: 10px;
+}
+.contact_left_information_para2{
+    color: rgba(227, 227, 227, 0.656);
+    font-size: 130%;
+    margin-top: 10px;
+}
+.contact_left_information_phone{
+    color: rgba(227, 227, 227, 0.656);
+    font-size: 130%;
+    margin-top: 10px;
+}
+.contact_left_information_email{
+    color: rgba(227, 227, 227, 0.656);
+    font-size: 130%;
+    margin-top: -30px;
+}
+.contact_email{
+    color: white;
+    position: relative;
+    cursor: pointer;
+}
+.contact_email::before{
+   content: "";
+   border-bottom: 2px solid $red;
+   position: absolute;
+   top: 0;
+   bottom: 0;
+   width: 0;
+   left: 2%;
+   right: 0;
+   transition: 0.4s all linear;
+}
+.contact_email:hover::before{
+    width: 100%;
+    
+}
+.contact_email:hover{
+    color: $red;
+}
+.contact_number{
+    color: white;
+    position: relative;
+    cursor: pointer;
+}
+.contact_number::before{
+    content: "";
+    border-bottom: 2px solid $red;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 0;
+    left: 4%;
+    right: 0;
+    transition: 0.4s all linear;
+ }
+ .contact_number:hover::before{
+     width: 100%;
+     color: $red;
+ }
+ .contact_number:hover{
+    color: $red;
+}
+.contact_left_social_links{
+    width: 55%;
+}
+.find_para{
+    color: $font-color;
+}
+.contact_form_right{
+    width: 55%;
+    box-shadow: $shadow;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+   padding-bottom: 3%;
+}
+.form_main{
+    width: 90%;
+    margin-top: 40px;
+}
+.name_div{
+    width: 47%;
+}
+.number_div{
+    width: 47%;
+}
+.name_heading{
+    color: $font-color;
+}
+.name_input{
+    transition: 0.2s all linear;
+    width: 100%;
+    border: 2px solid #191b1e;
+    background-color: #191b1e;
+    border-radius: 6px;
+    height: 55px;
+    box-shadow: 1px 4px 2px -3px rgba(0, 0, 0, 0.7) inset, -1px -3px 3px -2px rgba(255, 255, 255, 0.2) inset;
+}
+.name_input:focus{
+    outline:2px solid $red;
+    border: none;
+ }
+.number_heading{
+    color: $font-color;
+}
+.number_input{
+    transition: 0.2s all linear;
+    width: 100%;
+    border: 2px solid #191b1e;
+    background-color: #191b1e;
+    border-radius: 6px;
+    height: 55px;
+    box-shadow: 1px 4px 2px -3px rgba(0, 0, 0, 0.7) inset, -1px -3px 3px -2px rgba(255, 255, 255, 0.2) inset;
+}
+.number_input:focus{
+    outline:2px solid $red;
+    border: none;
+ }
+.email_heading{
+    color: $font-color;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.email_input{
+    transition: 0.2s all linear;
+    width: 100%;
+    border: 2px solid #191b1e;
+    background-color: #191b1e;
+    border-radius: 6px;
+    height: 55px;
+    box-shadow: 1px 4px 2px -3px rgba(0, 0, 0, 0.7) inset, -1px -3px 3px -2px rgba(255, 255, 255, 0.2) inset;
+}
+.email_input:focus{
+    outline:2px solid $red;
+    border: none;
+ }
+.subject_heading{
+    color: $font-color;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.subject_input{
+    transition: 0.2s all linear;
+    width: 100%;
+    border: 2px solid #191b1e;
+    background-color: #191b1e;
+    border-radius: 6px;
+    height: 55px;
+    box-shadow: 1px 4px 2px -3px rgba(0, 0, 0, 0.7) inset, -1px -3px 3px -2px rgba(255, 255, 255, 0.2) inset;
+}
+.subject_input:focus{
+    outline:2px solid $red;
+    border: none;
+ }
+.message_heading{
+    color: $font-color;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.message_input{
+    transition: 0.2s all linear;
+    width: 100%;
+    border:2px solid #191b1e;
+    background-color: #191b1e;
+    border-radius: 6px;
+    height: 250px;
+    box-shadow: 1px 4px 2px -3px rgba(0, 0, 0, 0.7) inset, -1px -3px 3px -2px rgba(255, 255, 255, 0.2) inset;
+}
+.message_input:focus{
+   outline:2px solid $red;
+   border: none;
+}
+.form_submit_btn{
+    width: 100%;
+    height: 60px;
+    box-shadow: $shadow;
+    border-radius: 6px;
+    color: $red;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.3s all linear;
+    margin-top: 20px;
+}
+.form_submit_btn:hover{
+    box-shadow: inset $shadow;
+}

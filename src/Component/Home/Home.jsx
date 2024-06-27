@@ -52,7 +52,7 @@ useGSAP(()=>{
    })
   
    tl.from('.my_name',{
-     y:100,
+     scale:15,
      opacity:0,
     duration:0.5,
     stagger:0.15,
@@ -123,16 +123,16 @@ useGSAP(()=>{
     <div className='hero_section_left'>
       <div className='hero_section_left_text'>
       <p className='intro_para'>Welcome To My World</p>
-        <h1 className='text-light intro_heading'>Hi, I'm 
-        <span className='my_name'> N</span>
-        <span className='my_name'>i</span>
-        <span className='my_name'>r</span>
-        <span className='my_name'>v</span>
-        <span className='my_name'>i</span>
-        <span className='my_name'>k</span>
-        <span className='my_name'> R</span>
-        <span className='my_name'>o</span>
-        <span className='my_name'>y</span></h1>
+        <h1 className='text-light intro_heading'>Hi, I'm  
+        <div className='my_name d-inline-block ms-3'>  N</div>
+        <div className='my_name d-inline-block'>i</div>
+        <div className='my_name d-inline-block'>r</div>
+        <div className='my_name d-inline-block'>v</div>
+        <div className='my_name d-inline-block'>i</div>
+        <div className='my_name d-inline-block'>k</div>
+        <div className='my_name d-inline-block ms-3'> R</div>
+        <div className='my_name d-inline-block'>o</div>
+        <div className='my_name d-inline-block'>y</div></h1>
         <p className='d-inline text-light intro_heading'>a </p> <p className='intro_heading2 text-light d-inline'>Front-End Developer</p>
         
        

@@ -1,5 +1,5 @@
 $font-size:smaller;
-$font-color:rgba(209, 209, 209, 0.956);
+$font-color: rgb(196,207,222);
 $bg: rgb(33,36,40);
 $shadow: -8px -5px 20px rgba(255, 255, 255, 0.048),5px 10px 15px rgba(0, 0, 0, 0.288),inset -8px -5px 15px rgba(255, 255, 255, 0.002);
 $red:rgb(255,1,79);
@@ -101,6 +101,7 @@ $red:rgb(255,1,79);
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color:rgba(255, 255, 255, 0.175);
 }
 .svg_div:hover {
     box-shadow: inset $shadow;
