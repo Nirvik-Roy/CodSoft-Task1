@@ -17,15 +17,14 @@ body{
   font-family: 'Open Sans', sans-serif;
   background-color: rgb(33,36,40);
   overflow-x: hidden;
-  
 }
 html{
-  overflow-y: scroll;
+  scroll-behavior: smooth;
 }
 ::-webkit-scrollbar{
   display: none;
 }
-.cursor{
+/* .cursor{
   width: 50px;
   height: 50px;
   border: 0.1px solid white;
@@ -33,8 +32,9 @@ html{
   border-radius: 50%;
   position: fixed;
   z-index: 999;
-  display: none;
-}
+ 
+} */
 .active{
   color: rgb(255,1,79);
+
 }

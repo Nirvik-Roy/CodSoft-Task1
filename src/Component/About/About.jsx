@@ -3,17 +3,17 @@ import './About.scss'
 import { useGSAP} from '@gsap/react'
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import { useEffect } from 'react';
 import Scroll from '../../Scroll';
 import { useLocation } from 'react-router-dom';
+import { useEffect,useRef } from 'react';
+import LocomotiveScroll from 'locomotive-scroll'
 gsap.registerPlugin(ScrollTrigger);
 const About = () => {
-
-  
   
     useEffect(() => {
         window.scrollTo({top:0,behavior:"instant"});
-        console.log('window')
+  
+      
       }, []);
  
     useGSAP(()=>{
@@ -84,7 +84,7 @@ const About = () => {
   return (
     <>
     
-     <section className='about_section'>
+     <section  className='about_section'>
       <h1 className=' about_heading text-center'>About Me</h1>
       <div className='about_us_container'>
         <div className='about_us_main'>

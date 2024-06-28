@@ -3,10 +3,16 @@ import './Contact.scss'
 import { useGSAP } from '@gsap/react'
 import gsap from 'gsap'
 import Scroll from '../../Scroll'
+import LocomotiveScroll from 'locomotive-scroll'
 const Contact = () => {
+
   let ref=useRef()
   let clutter=""
+
+
+
   useEffect(()=>{
+     
     let text=ref.current.innerText
     let split=text.split("")
     split.forEach(function(element){
@@ -21,10 +27,11 @@ const Contact = () => {
       stagger:0.15,
       scrollTrigger:{
         trigger:'.contact_heading',
-        
+        scroller:'body',
       }
     })
-    
+
+   
   },[])
 
 useGSAP(()=>{
@@ -36,8 +43,6 @@ useGSAP(()=>{
       trigger:'.hire_wrapper',
       top:'top 0%'
     }
-    
-
   })
 })
   // let splitText=text.split("  ")
@@ -60,7 +65,7 @@ useGSAP(()=>{
   return (
     <>
     <Scroll/>
-    <section id='contact' className='contact_section'>
+    <section  id='contact' className='contact_section'>
     <div className='contact_main d-flex justify-content-center' onMouseMove={((e)=>mousemove(e))}>
     <div className='contact_wrapper'>
     <h1 ref={ref} className='contact_heading '>

@@ -3,12 +3,15 @@ import React from 'react'
 import './Skills.scss'
 import { useGSAP} from '@gsap/react'
 import gsap from 'gsap'
+import { useEffect,useRef } from 'react'
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { Timeline } from 'gsap/gsap-core';
 import Scroll from '../../Scroll'
+import LocomotiveScroll from 'locomotive-scroll'
 gsap.registerPlugin(ScrollTrigger);
 const Skills = () => {
-
+    const skillRef = useRef(null)
+   
     useGSAP(()=>{
        
         gsap.to('.percentage',{
@@ -124,7 +127,7 @@ const Skills = () => {
   return (
     <>
     <Scroll/>
-      <section className='skills_section'>
+      <section  className='skills_section'>
       <div className='cursor'></div>
       <h1 className='skills_heading text-center'>My Skills</h1>
         <div className='skills_container_main d-flex justify-content-center'>

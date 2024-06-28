@@ -1,4 +1,4 @@
-import React, { useRef, useState ,} from 'react'
+import React, { useRef, useState ,useEffect} from 'react'
 import './Portfolio.scss'
 import gsap from 'gsap'
 import project1 from '../../assets/Screenshot (2).png'
@@ -6,18 +6,35 @@ import project2 from '../../assets/Screenshot (3).png'
 import { useGSAP } from '@gsap/react' 
 import { useHref } from 'react-router-dom'
 import Scroll from '../../Scroll'
+import LocomotiveScroll from 'locomotive-scroll'
 const Portfolio = () => {
  const [elementid,setelementid]=useState();
  const [modal,setmodal]=useState(false);
   
- 
+
+  
+  useEffect(()=>{
+    
+  },[])
+ useGSAP(()=>{
+  gsap.from('.project_container',{
+    y:50,
+    opacity:0,
+    duration:0.1,
+    scrollTrigger:{
+      trigger:'.project_container',
+      scroller:'body',
+    }
+  })
+})
  
 
-  const Modal=(props)=>{    
+  const Modal=(props)=>{   
+    
+    
     let data=props.data;
     let id=props.id
     return(<>
-    <Scroll/>
     <div className='modal_main'></div>
       <div  className='modal_wrapper'>
       {data.map((element,index)=>{
@@ -53,19 +70,7 @@ const Portfolio = () => {
       </div>
     </>)
   }
-  useGSAP(()=>{
-    gsap.from('.project_container',{
-      y:50,
-      opacity:0,
-      duration:0.1,
-      scrollTrigger:{
-        trigger:'.project_container',
-        scroller:'body',
-        start:'top 100%',
-
-      }
-    })
-  })
+ 
   const projects =[{
     id:1,
     name:'Neo Gym',
@@ -111,7 +116,7 @@ const Portfolio = () => {
   return (
     <>
     <Scroll/>
-      <section className='portfolio_section' onMouseMove={((e)=>mousemove(e))}>
+      <section  className='portfolio_section' onMouseMove={((e)=>mousemove(e))}>
           <div  className='cursor'></div>
         <h1 className='portfolio_heading text-center'>My Portfolio</h1>
         <div className='portfolio_container d-flex justify-content-center'>

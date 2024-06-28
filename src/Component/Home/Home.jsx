@@ -12,6 +12,7 @@ import Footer from '../Footer/Footer'
 import { Link, useLocation } from 'react-router-dom'
 import Navbar from '../Navbar/Navbar'
 import Scroll from '../../Scroll'
+import LocomotiveScroll from 'locomotive-scroll'
 gsap.registerPlugin(ScrollTrigger);
 
 const Home = () => {
@@ -67,12 +68,14 @@ useGSAP(()=>{
     opacity:0,
     duration:0.3
    })
+
+
 })
 
   return (
     <>
     <Scroll/>
-      <div  className='container_main ' >
+      <div   className='container_main ' >
         <div className='cursor'></div>
     
  
@@ -82,15 +85,15 @@ useGSAP(()=>{
       <div className='hero_section_left_text'>
       <p className='intro_para'>Welcome To My World</p>
         <h1 className='text-light intro_heading'>Hi, I'm  
-        <div className='my_name d-inline-block ms-3'>  N</div>
-        <div className='my_name d-inline-block'>i</div>
-        <div className='my_name d-inline-block'>r</div>
-        <div className='my_name d-inline-block'>v</div>
-        <div className='my_name d-inline-block'>i</div>
-        <div className='my_name d-inline-block'>k</div>
-        <div className='my_name d-inline-block ms-3'> R</div>
-        <div className='my_name d-inline-block'>o</div>
-        <div className='my_name d-inline-block'>y</div></h1>
+        <span className='my_name d-inline-block ms-3'>  N</span>
+        <span className='my_name d-inline-block'>i</span>
+        <span className='my_name d-inline-block'>r</span>
+        <span className='my_name d-inline-block'>v</span>
+        <span className='my_name d-inline-block'>i</span>
+        <span className='my_name d-inline-block'>k</span>
+        <span className='my_name d-inline-block ms-3'> R</span>
+        <span className='my_name d-inline-block'>o</span>
+        <span className='my_name d-inline-block'>y</span></h1>
         <p className='d-inline text-light intro_heading'>a </p> <p className='intro_heading2 text-light d-inline'>Front-End Developer</p>
         
        
