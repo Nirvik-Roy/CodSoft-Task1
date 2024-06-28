@@ -5,6 +5,7 @@ import project1 from '../../assets/Screenshot (2).png'
 import project2 from '../../assets/Screenshot (3).png'
 import { useGSAP } from '@gsap/react' 
 import { useHref } from 'react-router-dom'
+import Scroll from '../../Scroll'
 const Portfolio = () => {
  const [elementid,setelementid]=useState();
  const [modal,setmodal]=useState(false);
@@ -16,6 +17,7 @@ const Portfolio = () => {
     let data=props.data;
     let id=props.id
     return(<>
+    <Scroll/>
     <div className='modal_main'></div>
       <div  className='modal_wrapper'>
       {data.map((element,index)=>{
@@ -108,6 +110,7 @@ const Portfolio = () => {
   }
   return (
     <>
+    <Scroll/>
       <section className='portfolio_section' onMouseMove={((e)=>mousemove(e))}>
           <div  className='cursor'></div>
         <h1 className='portfolio_heading text-center'>My Portfolio</h1>

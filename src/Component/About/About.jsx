@@ -3,17 +3,19 @@ import './About.scss'
 import { useGSAP} from '@gsap/react'
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import { useEffect } from 'react';
+import Scroll from '../../Scroll';
+import { useLocation } from 'react-router-dom';
 gsap.registerPlugin(ScrollTrigger);
 const About = () => {
 
-  const mousemove = (e) =>{
-   
-    gsap.to('.cursor',{
-      x:e.pageX,
-      y:e.pageY,
-      ease:'back.out'
-    })
-  }
+  
+  
+    useEffect(() => {
+        window.scrollTo({top:0,behavior:"instant"});
+        console.log('window')
+      }, []);
+ 
     useGSAP(()=>{
         gsap.from('.svg_div',{
          x:-200,
@@ -81,7 +83,8 @@ const About = () => {
        })
   return (
     <>
-     <section className='about_section' onMouseMove={((e)=>mousemove(e))}>
+    
+     <section className='about_section'>
       <h1 className=' about_heading text-center'>About Me</h1>
       <div className='about_us_container'>
         <div className='about_us_main'>

@@ -2,6 +2,7 @@ import React, { useEffect, useRef, useState } from 'react'
 import './Contact.scss'
 import { useGSAP } from '@gsap/react'
 import gsap from 'gsap'
+import Scroll from '../../Scroll'
 const Contact = () => {
   let ref=useRef()
   let clutter=""
@@ -20,6 +21,7 @@ const Contact = () => {
       stagger:0.15,
       scrollTrigger:{
         trigger:'.contact_heading',
+        
       }
     })
     
@@ -57,7 +59,8 @@ useGSAP(()=>{
 
   return (
     <>
-    <section className='contact_section'>
+    <Scroll/>
+    <section id='contact' className='contact_section'>
     <div className='contact_main d-flex justify-content-center' onMouseMove={((e)=>mousemove(e))}>
     <div className='contact_wrapper'>
     <h1 ref={ref} className='contact_heading '>

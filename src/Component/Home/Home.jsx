@@ -9,37 +9,19 @@ import Skills from '../Skills/Skills'
 import Portfolio from '../Portfolio/Portfolio'
 import Contact from '../Contact/Contact'
 import Footer from '../Footer/Footer'
+import { Link, useLocation } from 'react-router-dom'
+import Navbar from '../Navbar/Navbar'
+import Scroll from '../../Scroll'
 gsap.registerPlugin(ScrollTrigger);
 
 const Home = () => {
-  const [nav_active,setnav_active]=useState(false)
-  const  mousemove = (e) =>{
-    gsap.to('.cursor',{
-      x:e.pageX,
-      y:e.pageY,
-      ease:'back.out',
-      display:'block'
-    })
-  }
+  
+  
+
 useGSAP(()=>{
     let tl=gsap.timeline()
-    tl.from('.nav_img_div',{
-      duration:0.8,
-      opacity:0,
-      y:-90,
-    })
-    tl.from(".nav_logo",{
-      duration:0.5,
-      opacity:0,
-      y:-30,
-    })
-   tl.from('.nav_links',{
-    y:-30,
-    duration:0.3,
-    opacity:0,
-    stagger:0.15,
-   })
    tl.from('.intro_para',{
+    delay:2,
     x:-300,
     duration:0.3,
     opacity:0,
@@ -89,36 +71,10 @@ useGSAP(()=>{
 
   return (
     <>
-      <div onMouseMove={((e)=>mousemove(e))} className='container_main ' >
+    <Scroll/>
+      <div  className='container_main ' >
         <div className='cursor'></div>
-       <nav  className='nav_main'>
-      <div className={` nav_bar_main d-flex justify-content-between align-items-center ${nav_active?'nav_active':''}`}>
-    <div className='nav_logo_main '>
-      <div className='nav_img_div_main d-flex'>
-        <div className='nav_img_div mt-2'>
-          <img className='nav_logo_img' src={Mylogo} alt='logo' />
-        </div>
-      </div>
-      <div className='nav_logo_div'>
-        <p className=' nav_logo mt-3'>NEO</p>
-      </div>
-    </div>
-
     
-    <div className='nav_div_wrapper'>
-      <ul className='text-light nav_links_main'>
-        <li className='nav_links'>HOME</li>
-        <li className='nav_links'>ABOUT</li>
-        <li className='nav_links'>SKILLS</li>
-        <li className='nav_links'>PORTFOLIO</li>
-        <li className='nav_links'>CONTACT</li>
-        <li className='nav_links download_CV btn'>
-          <a href='../public/My Resume (4)-1.pdf' download className='download_para'>Download CV</a>
-        </li>
-      </ul>
-    </div>
-    </div>
-  </nav>
  
   <div className='hero_section_main d-flex justify-content-center'>
   <div className='hero_section d-flex justify-content-space-around'>
@@ -190,7 +146,7 @@ useGSAP(()=>{
       <Skills/>
       <Portfolio/>
       <Contact/>
-      <Footer/>
+  
     </>
   )
 }

@@ -6,17 +6,10 @@ import { useEffect } from 'react'
 
 const Footer = () => {
 
-  const mousemove = (e) =>{
-    console.log((e))
-    gsap.to('.cursor',{
-      x:e.pageX,
-      y:e.pageY,
-      ease:'back.out'
-    })
-  }
+ 
   return (
     <>
-      <section  className='footer_section' onMouseMove={((e)=>mousemove(e))}>
+      <section  className='footer_section' >
         <div className='footer_container'>
         <div className='footer_wrapper d-flex justify-content-center align-items-center'>
             <div className='footer_logo_div'>

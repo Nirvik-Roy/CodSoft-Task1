@@ -3,13 +3,12 @@
   padding: 0;
   box-sizing: border-box;
   font-family: sans-serif;
-  scroll-behavior: smooth;
 }
 a{
   text-decoration: none;
   cursor: pointer;
 }
-body,html{
+body{
   height: 100%;
   width: 100%;
   margin: 0;
@@ -19,6 +18,9 @@ body,html{
   background-color: rgb(33,36,40);
   overflow-x: hidden;
   
+}
+html{
+  overflow-y: scroll;
 }
 ::-webkit-scrollbar{
   display: none;
@@ -32,4 +34,7 @@ body,html{
   position: fixed;
   z-index: 999;
   display: none;
+}
+.active{
+  color: rgb(255,1,79);
 }
