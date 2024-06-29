@@ -94,6 +94,7 @@ $red:rgb(255,1,79);
 }
 .right_about_us{
     width: 42.5%;
+   
 }
 .svg_div{
     width: 100%;
@@ -106,6 +107,9 @@ $red:rgb(255,1,79);
 .svg_div:hover {
     box-shadow: inset $shadow;
 }
+.hi_there_main{
+    overflow-x: visible !important;
+}
 .hi_there_div{
     width: 160px;
     height: 80px;
@@ -117,6 +121,7 @@ $red:rgb(255,1,79);
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow-x: visible !important;
 }
 .hi_there_div::before{
     content: '';
@@ -130,7 +135,7 @@ $red:rgb(255,1,79);
     animation: border-top linear;
     animation-timeline: view();
     animation-range: entry 0% cover 60%;
-    
+    overflow-x: visible !important;
 }
 .hi_there_div::after{
     content: "";
@@ -144,7 +149,7 @@ $red:rgb(255,1,79);
     animation: border-bottom linear ;
     animation-timeline: view();
     animation-range: entry 0% cover 60%;
-    
+    overflow-x: visible;
 }
 @keyframes border-top {
     0%{

@@ -53,20 +53,13 @@ useGSAP(()=>{
  
   
  
-  const mousemove = (e) =>{
-    gsap.to('.cursor',{
-      x:e.pageX,
-      y:e.pageY,
-      ease:'back.out',
-      display:'block'
-    })
-  }
+ 
 
   return (
     <>
     <Scroll/>
     <section  id='contact' className='contact_section'>
-    <div className='contact_main d-flex justify-content-center' onMouseMove={((e)=>mousemove(e))}>
+    <div className='contact_main d-flex justify-content-center'>
     <div className='contact_wrapper'>
     <h1 ref={ref} className='contact_heading '>
     Let’s,Work,Together,On,Your, Next-Project!

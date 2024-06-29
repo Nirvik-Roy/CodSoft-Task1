@@ -76,7 +76,7 @@ useGSAP(()=>{
     <>
     <Scroll/>
       <div   className='container_main ' >
-        <div className='cursor'></div>
+        
     
  
   <div className='hero_section_main d-flex justify-content-center'>

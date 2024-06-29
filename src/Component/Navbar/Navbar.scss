@@ -8,14 +8,17 @@ $red:rgb(255,1,79);
     height: 90px;
     display: flex;
     justify-content: center;
-   
+    
   }
-  .nav_bar_main{
+
+ .nav_bar_main{
       height: 90px;
       width: 100%;
       position: fixed;
       z-index: 888;
-      padding-top: 2%
+      padding-top: 2%;
+      
+
   }
   .nav_active{
       background-color:rgba(35, 38, 43, 0.667) ;
@@ -26,14 +29,17 @@ $red:rgb(255,1,79);
       display: flex;
       gap: 40px;
       margin-top: 15px;
+      
   }
   .nav_div_wrapper{
       margin-right: 2%;
+      
   }
   .nav_links{
       list-style: none;
       font-size: $font-size;
       color: $font-color;
+    
    }
    .download_CV{
       width: 110px;
@@ -42,6 +48,7 @@ $red:rgb(255,1,79);
       transform: translateY(-25%);
       display: flex;
       justify-content: center;
+     
    }
    .download_CV:hover{
       box-shadow: inset  -8px -5px 20px rgba(255, 255, 255, 0.048),5px 10px 15px rgba(0, 0, 0, 0.288),inset -8px -5px 15px rgba(255, 255, 255, 0.002);
@@ -50,6 +57,7 @@ $red:rgb(255,1,79);
       padding-top: 10%;
       text-decoration: none;
       color: $red;
+      
    }
   .nav_logo{
       font-size: xx-large;

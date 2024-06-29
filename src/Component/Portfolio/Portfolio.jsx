@@ -89,16 +89,7 @@ const Portfolio = () => {
     likes:500,
   },
 ]
-  const mousemove = (e) =>{
-   
- 
-    gsap.to('.cursor',{
-      x:e.pageX,
-      y:e.pageY,
-      ease:'back.out',
-      display:'block'
-    })
-  }
+
 
   const modalAnimation=()=>{
     // gsap.from(modalref.current,{
@@ -116,7 +107,7 @@ const Portfolio = () => {
   return (
     <>
     <Scroll/>
-      <section  className='portfolio_section' onMouseMove={((e)=>mousemove(e))}>
+      <section  className='portfolio_section' >
           <div  className='cursor'></div>
         <h1 className='portfolio_heading text-center'>My Portfolio</h1>
         <div className='portfolio_container d-flex justify-content-center'>

@@ -39,6 +39,7 @@ const About = () => {
            start:'top 90%',
          }
         })
+        
         gsap.from(".about_me_text_div",{
          x:300,
          opacity:0,
