@@ -8,7 +8,7 @@ $red:rgb(255,1,79);
     height: 90px;
     display: flex;
     justify-content: center;
-    
+    position: relative;
   }
 
  .nav_bar_main{
@@ -39,7 +39,6 @@ $red:rgb(255,1,79);
       list-style: none;
       font-size: $font-size;
       color: $font-color;
-    
    }
    .download_CV{
       width: 110px;
@@ -83,3 +82,116 @@ $red:rgb(255,1,79);
       object-fit: cover;
       object-position: center;
   }
+  .nav_menu{
+    display: none;
+  }
+  @media(max-width:1274px) {
+     .nav_menu{
+          display: block;
+      }
+      
+      .nav_links{
+         display: none;
+      }
+  }
+  .nav_menu_div{
+    width: 370px;
+    background-color: rgb(25,27,30);
+    z-index: 9999;
+    left: 0;
+    position: fixed;
+    z-index: 999999;
+    height: 100vh;
+   overflow-y: scroll;
+   animation: nav_menu 0.3s linear 1;
+   transition: all 0.3 linear;
+   
+  }
+  @keyframes nav_menu {
+    0%{
+        transform: translateX(-50%);
+        
+    }100%{
+        transform: translateX(0);
+    }
+  }
+  .nav_menu_main{
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.609);
+    position: fixed;
+    z-index: 99999;
+  }
+.menu_div_container{
+    width: 80%;
+}
+.menu_div_logo{
+    border: 3px solid rgba(128, 128, 128, 0.554);
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    box-shadow: $shadow;
+}
+
+.menu_logo_img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+}
+.menu_close_div{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(35,38,43);
+    box-shadow: $shadow;
+}
+.menu_close_div:hover{
+    box-shadow: inset $shadow;
+    cursor: pointer;
+}
+.cross_icon{
+    color: $red;
+
+}
+.menu_about_para{
+    color: rgba(175, 174, 174, 0.781);
+    font-size: larger;
+}
+.name{
+    color: $red;
+}
+.nav_links2{
+    color: $font-color;
+    font-size: large;
+    margin-top: 30px;
+}
+.menu_hr_line{
+    margin-top: 100px;
+}
+.menu_find_With_me_para{
+    color: $font-color;
+    font-size: larger;
+}
+.menu-find_with_me_links{
+    width: 70%;
+    padding-bottom: 10%;
+}
+.menu_find_with_me_box{
+    width: 55px;
+    height: 55px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(35,38,43);
+    color: white;
+    cursor: pointer;
+}
+.menu_find_with_me_box:hover{
+    box-shadow: inset $shadow;
+}

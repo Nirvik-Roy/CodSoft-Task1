@@ -27,10 +27,13 @@ body{
 html{
   scroll-behavior: smooth;
   overflow-x: hidden;
+ 
 }
-::-webkit-scrollbar{
+html::-webkit-scrollbar{
   display: none;
+  
 }
+
 /* .cursor{
   width: 50px;
   height: 50px;

@@ -31,7 +31,13 @@ const Portfolio = () => {
 
   const Modal=(props)=>{   
     
+    const removemodal =()=>{
+      document.getElementsByTagName('html')[0].style.overflowY = "scroll";
+      setmodal(false);
+    }
     
+
+
     let data=props.data;
     let id=props.id
     return(<>
@@ -57,7 +63,7 @@ const Portfolio = () => {
                 <button className='modal_view_project_btn' onClick={(()=>window.open(element.project_link,'_blank','rel=noopener noreferrer'))}>VIEW PROJECT <i class="ms-2 fa-solid fa-greater-than"></i></button>
               </div>
             </div>
-            <div onClick={(()=>setmodal(false))} className='modal_close_btn d-flex justify-content-center align-items-center'>
+            <div onClick={(()=>removemodal())} className='modal_close_btn d-flex justify-content-center align-items-center'>
             <i class="fa-solid fa-x text-light"></i>
             </div>
   
@@ -92,17 +98,9 @@ const Portfolio = () => {
 
 
   const modalAnimation=()=>{
-    // gsap.from(modalref.current,{
-    //   y:-50,
-    //   opacity:0,
-    //   duration:0.5,
-    //   scrollTrigger:{
-    //     trigger:'modalref.current',
-    //     scroller:"body",
-    //     start:"top 50%"
-    //   }
-    // })
+      
     setmodal(true)
+    document.getElementsByTagName('html')[0].style.overflowY = "hidden";
   }
   return (
     <>
