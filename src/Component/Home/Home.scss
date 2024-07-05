@@ -6,7 +6,6 @@ $red:rgb(255,1,79);
 
 .container_main{
     padding-bottom: 6%;
-   
 }
 
 .hero_section{
@@ -140,4 +139,49 @@ $red:rgb(255,1,79);
     width: 95%;
     font-weight: 700;
    margin-top: 90px;
+}
+
+
+//Media Querires Start from here//
+@media only screen and (min-width:200px) and (max-width:767px){
+    .hero_section{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .hero_section_left{
+        width: 100%;
+        margin-top: 40px;
+    }
+    .hero_section_right{
+        width: 90%;
+        margin-top: -80px;
+    }
+    .intro_para{
+        font-size: smaller;
+    }
+    .intro_heading{
+        font-size: 31px;
+    }
+    .intro_heading2{
+        font-size: 24.5px;
+    }
+    .introduction_div{
+        width: 100%;
+    }
+    .introduction_para{
+        font-size: 14px;
+    }
+    .social_skills_main{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .social_skills_wrapper{
+        width: 80%;
+        letter-spacing: 4px;
+        font-size: small;
+    }
+    .social_wrapper_2{
+        margin-top: 40px;
+    }
 }

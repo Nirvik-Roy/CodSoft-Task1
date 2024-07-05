@@ -106,7 +106,6 @@ const Portfolio = () => {
     <>
     <Scroll/>
       <section  className='portfolio_section' >
-          <div  className='cursor'></div>
         <h1 className='portfolio_heading text-center'>My Portfolio</h1>
         <div className='portfolio_container d-flex justify-content-center'>
           <div className='portfolio_projects_container '>

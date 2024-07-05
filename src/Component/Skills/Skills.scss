@@ -146,3 +146,24 @@ $font-weight:700;
 .right_skills_main{
     width: 90%;
 }
+
+//Media Queries Start from here//
+
+@media only screen and (min-width:200px) and (max-width:767px){
+    .skills_heading {
+        font-size: 250%;
+    }
+    .skills_main_div{
+        display: flex;
+        flex-direction: column;
+    }
+    .left_skills_div{
+        width: 100%;
+    }
+    .right_skills_div{
+        width: 100%;
+        margin-top: 30px;
+        display: flex;
+        justify-content: end;
+    }
+}

@@ -100,7 +100,7 @@ const About = () => {
                 <p className='pt-3 hi_there_text'>Hi There</p>
                </div>
                <div className='about_me_text_div'>
-                <p>In id nulla magna. Nullam posuere fermentum mattis. Nunc id dui at sapien faucibus fermentum ut vel diam. Nullam tempus, nunc id efficitur sagittis, urna est ultricies eros, ac porta sem turpis quis leo. Nulla in feugiat elit.</p>
+                <p>I am a Front End Developer adept at translating creative visions into interactive web experiences. Proficient in HTML, CSS, JavaScript and Reactjs, I prioritize usability and performance. With a keen eye for design and a passion for innovation.</p>
                </div>
                <div className='d-flex justify-content-between'>
                <div className='about_me_name_div'>
@@ -124,7 +124,7 @@ const About = () => {
             
                </div>
                <hr className='text-light'></hr>
-                  <div className='d-flex justify-content-between w-75 mt-4 buttons_div'>
+                  <div className=' button_wrapper_div d-flex justify-content-between  mt-4 buttons_div'>
                       <button className=' contact_btn'>Contact Me <i class="fa-solid fa-arrow-right"></i> </button>
                       <a href='../public/My Resume (4)-1.pdf' download   className='download_CV_btn'>Download CV <i class="fa-solid fa-arrow-right"></i> </a>
                   </div>

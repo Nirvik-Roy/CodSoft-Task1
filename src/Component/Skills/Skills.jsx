@@ -128,7 +128,6 @@ const Skills = () => {
     <>
     <Scroll/>
       <section  className='skills_section'>
-      <div className='cursor'></div>
       <h1 className='skills_heading text-center'>My Skills</h1>
         <div className='skills_container_main d-flex justify-content-center'>
             <div className='skills_main_div d-flex'>

@@ -17,7 +17,7 @@ const Contact = () => {
     let split=text.split("")
     split.forEach(function(element){
       
-      clutter+=`<div classname="contact_head" style="display:inline-block;color:rgb(196,207,222">${element}</div>`
+   clutter+=`<div classname="contact_head" style="display:inline-block;color:rgb(196,207,222);">${element}</div>`
     })
     ref.current.innerHTML=clutter
     gsap.from('h1 div',{
@@ -61,8 +61,8 @@ useGSAP(()=>{
     <section  id='contact' className='contact_section'>
     <div className='contact_main d-flex justify-content-center'>
     <div className='contact_wrapper'>
-    <h1 ref={ref} className='contact_heading '>
-    Let’s,Work,Together,On,Your, Next-Project!
+    <h1 ref={ref} className='contact_heading'>
+    Let’s- Work- Together- On -Your -Next -Project!
     </h1>
     <div className='hire_wrapper d-flex justify-content-center'>
       <a download href='../../../public/My Resume (4)-1.pdf' className='hire_div d-flex justify-content-center align-items-center'>HIRE ME NOW</a>

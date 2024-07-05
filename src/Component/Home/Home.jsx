@@ -108,7 +108,7 @@ useGSAP(()=>{
 
       <div className='social_skills_wrapper'>
         <p className='social_para'>Find With Me</p>
-        <div className='d-flex justify-content-between'>
+        <div className=' social_skills_button_main d-flex justify-content-between'>
           <div className='social_media_buttons'>
             <a className='social_btn'><i class="fa-brands fa-facebook-f text-light"></i></a>
             <a className='social_btn '><i class="fa-brands fa-instagram"></i></a>
@@ -117,7 +117,7 @@ useGSAP(()=>{
 
         </div>
 </div>
-       <div className='social_skills_wrapper'>
+       <div className='social_skills_wrapper social_wrapper_2'>
         <p className='social_para'>BEST SKILLS ON</p>
         <div className='d-flex justify-content-between'>
           <div className='social_media_buttons'>
