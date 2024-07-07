@@ -260,5 +260,37 @@ $font-weight:700;
         transition: 1s linear all;
         margin-top:30px ;
     }
-    
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px){
+    .portfolio_heading{
+        font-size: 230%;
+    }
+    .portfolio_projects_container{
+        display: flex;
+        justify-content: space-around;
+    }
+    .project_container{
+        width: 40%;
+        border-radius: 20px;
+        box-shadow: $shadow;
+        cursor: pointer;
+        transition: 1s linear all;
+        margin-top:30px ;
+        height: 90%;
+    }
+    .project_img_div{
+        height: 180px;
+    }
+    .project_heading{
+        font-size: 150%;
+    }
+    .project_about{
+        font-size: 100%;
+    }
+    .project_domain{
+        font-size: 75%;
+    }
+    .project_likes{
+        font-size: 75%;
+    }
 }

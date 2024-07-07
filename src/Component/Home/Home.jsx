@@ -8,11 +8,8 @@ import About from '../About/About'
 import Skills from '../Skills/Skills'
 import Portfolio from '../Portfolio/Portfolio'
 import Contact from '../Contact/Contact'
-import Footer from '../Footer/Footer'
-import { Link, useLocation } from 'react-router-dom'
-import Navbar from '../Navbar/Navbar'
 import Scroll from '../../Scroll'
-import LocomotiveScroll from 'locomotive-scroll'
+
 gsap.registerPlugin(ScrollTrigger);
 
 const Home = () => {
@@ -72,6 +69,61 @@ useGSAP(()=>{
 
 })
 
+
+// let responsive=gsap.matchMedia()
+// responsive.add("(max-width:400px)",()=>{
+//   let tl=gsap.timeline()
+//   tl.from('.hero_section_right_img_div',{
+//     duration:0.3,
+//     scale:6,
+//     opacity:0,
+   
+//    },)
+//   tl.from('.intro_para',{
+//    delay:2,
+//    x:-300,
+//    duration:0.3,
+//    opacity:0,
+//   })
+//   tl.from(".intro_heading",{
+//    x:-300,
+//    duration:0.3,
+//    opacity:0,
+//   })
+ 
+//   tl.from('.my_name',{
+//     scale:15,
+//     opacity:0,
+//    duration:0.5,
+//    stagger:0.15,
+//   })
+//   tl.from(".introduction_para",{
+//    x:-300,
+//    duration:0.3,
+//    opacity:0,
+//   })
+//   tl.from(".intro_btn",{
+//    opacity:0,
+//   })
+
+//   tl.from(".social_para",{
+//    duration:0.2,
+//    opacity:0,
+//    y:30,
+//    stagger:0.15,
+//   })
+//   tl.from('.social_btn',{
+//    duration:0.3,
+//    opacity:0,
+//    y:30,
+//    stagger:0.15,
+//   })
+//   tl.from('.intro_heading2',{
+//    opacity:0,
+//    duration:0.3
+//   })
+
+// })
   return (
     <>
     <Scroll/>

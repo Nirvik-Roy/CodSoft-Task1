@@ -17,8 +17,6 @@ $red:rgb(255,1,79);
       position: fixed;
       z-index: 888;
       padding-top: 2%;
-      
-
   }
   .nav_active{
       background-color:rgba(35, 38, 43, 0.667) ;
@@ -63,6 +61,7 @@ $red:rgb(255,1,79);
       font-weight: 600;
       padding-left: 10px;
       color: $font-color;
+      
   }
   .nav_img_div{
       width: 65px;
@@ -88,6 +87,7 @@ $red:rgb(255,1,79);
   @media(max-width:1274px) {
      .nav_menu{
           display: block;
+          color: $red;
       }
       
       .nav_links{
@@ -194,4 +194,20 @@ $red:rgb(255,1,79);
 }
 .menu_find_with_me_box:hover{
     box-shadow: inset $shadow;
+}
+@media only screen and (min-width:200px) and (max-width:767px){
+    .nav_div_wrapper{
+        margin-right: 4%;
+    }
+    .nav_img_div{
+        width: 55px;
+        height: 55px;
+    }
+    .nav_img_div_main{
+        margin-top: 6px;
+    }
+    .nav_menu_div{
+        width: 85%;
+    }
+    
 }

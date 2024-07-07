@@ -70,11 +70,11 @@ const Navbar = () => {
           <div className='menu_div_links_main'>
 
             <div className='menu_div_links_wrapper d-flex flex-column'>
-            <NavLink to={'/'} className='nav_links2'>HOME</NavLink>
-           <NavLink to={'/about'} className='nav_links2'>ABOUT</NavLink>
-           <NavLink to={'/skill'} className='nav_links2'>SKILLS</NavLink>
-           <NavLink to={'/portfolio'} className='nav_links2'>PORTFOLIO</NavLink>
-            <NavLink to='/contact' duration={500} className='nav_links2'>CONTACT</NavLink>
+            <NavLink to={'/'} onClick={(()=>setnav_menu(false))} className='nav_links2'>HOME</NavLink>
+           <NavLink to={'/about'}  onClick={(()=>setnav_menu(false))} className='nav_links2'>ABOUT</NavLink>
+           <NavLink to={'/skill'}  onClick={(()=>setnav_menu(false))} className='nav_links2'>SKILLS</NavLink>
+           <NavLink to={'/portfolio'}  onClick={(()=>setnav_menu(false))} className='nav_links2'>PORTFOLIO</NavLink>
+            <NavLink to='/contact'  onClick={(()=>setnav_menu(false))} duration={500} className='nav_links2'>CONTACT</NavLink>
             </div>
           </div>
           <hr className='text-secondary menu_hr_line'></hr>

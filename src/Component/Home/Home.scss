@@ -87,6 +87,7 @@ $red:rgb(255,1,79);
     object-position: center;
     animation: blob 8s ease-out infinite ;
     transition: 1s all linear;
+    border: 1px solid rgba(128, 128, 128, 0.042);
 }
 @keyframes blob{
     0%,100%{
@@ -183,5 +184,50 @@ $red:rgb(255,1,79);
     }
     .social_wrapper_2{
         margin-top: 40px;
+    }
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px){
+    .hero_section{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .hero_section{
+        width: 90%;
+    }
+    .hero_section_left{
+        width: 100%;
+        margin-top: 40px;
+    }
+    .hero_section_right{
+        width: 100%;
+        margin-top: -80px;
+    }
+    .intro_para{
+        font-size: large;
+    }
+    .intro_heading{
+        font-size: 450%;
+    }
+    .intro_heading2{
+        font-size: 380%;
+    }
+    .introduction_div{
+        width: 100%;
+    }
+    .introduction_para{
+        font-size: 110%;
+        margin-top: 10px;
+    }
+    .social_skills_main{
+        width: 85%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .social_skills_wrapper{
+        letter-spacing: 4px;
+        font-size: small;
+    }
+    .hr_line{
+        margin-top: 30px;
     }
 }
