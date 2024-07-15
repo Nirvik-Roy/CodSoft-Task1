@@ -1,4 +1,11 @@
 
+Name: Nirvik Roy
+Company: CODTECH IT SOLUTIONS
+ID:CTO4FWDX638
+Domain:FRONTEND WEB DEVELOPMENT
+Duration:June To July 2024
+Mentor:SRAVANI GOUNI
+
 # Project Overview
 
 Technology Stack:
