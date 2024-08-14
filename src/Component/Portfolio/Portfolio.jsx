@@ -88,7 +88,7 @@ const Portfolio = () => {
   },{
     id:2,
     name:'Dnk-Store',
-    project_link:'https://dnk-store-fawn.vercel.app/',
+    project_link:'https://dnk-shop.vercel.app/',
     domain:'Development',
     image:project2,
     about:'(E-Commerce Site)',
