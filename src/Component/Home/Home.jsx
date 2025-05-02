@@ -153,7 +153,7 @@ useGSAP(()=>{
         
        
         <div className='introduction_div'>
-          <p className='introduction_para'>I use animation as a third dimension by which to simplify experiences and kuiding thro each and every interaction. I’m not adding motion just to spruce things up, but doing it in ways tha</p>
+          <p className='introduction_para'>I am a Front End Developer adept at translating creative visions into interactive web experiences. Proficient in HTML, CSS, JavaScript and Reactjs</p>
         </div>
       </div>
       <div className='social_skills_main'>
